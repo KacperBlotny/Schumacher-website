@@ -1,0 +1,67 @@
+$websiteWidth: 1280px;
+
+$mainBgColorBlue: rgb(240, 240, 250);
+$mainBgColor: white;
+$mainColorRed: rgb(201, 4, 4);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+  background: $mainBgColorBlue;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: $websiteWidth;
+  margin: auto;
+  overflow: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.underlineHover {
+  display: block;
+  position: relative;
+  padding: 0.2em 0;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: rgb(201, 4, 4);
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+  }
+  &:hover::after,
+  &:focus::after {
+    opacity: 1;
+    transform: translate3d(0, 0.2em, 0);
+  }
+  &::after {
+    opacity: 1;
+    transform: scale(0);
+    transform-origin: center;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    transform: scale(1);
+  }
+}

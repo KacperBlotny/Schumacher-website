@@ -1,0 +1,105 @@
+@media (max-width: 420px) {
+  $websiteWidth: 500px;
+  .resHidden {
+    display: none;
+  }
+  .navBar {
+    .navbarContent {
+      min-width: 100%;
+      margin: 0;
+      width: fit-content;
+      align-items: center;
+
+      margin: auto;
+      img {
+        height: 70px;
+      }
+      .contactNavigation {
+        .navigation {
+          .navigationElement {
+            font-size: 1.4rem;
+            padding-left: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  .mainImg {
+    min-height: 600px;
+    .textContainer {
+      padding: 13rem 0 0 2rem;
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1.2rem;
+        max-width: 20rem;
+      }
+      .button {
+        padding: 0.6rem;
+        margin: 0.8rem 0;
+      }
+    }
+  }
+
+  .about2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    &Photo {
+      padding: 1rem;
+    }
+    .largeP {
+      padding: 0 2rem;
+    }
+  }
+
+  #offer {
+    padding: 1rem;
+    .offerText {
+      p {
+        display: none;
+      }
+    }
+    .hiddenP {
+      display: block;
+    }
+    .plus {
+      min-height: 60px;
+      min-width: 300px;
+      padding: 1rem 0;
+    }
+  }
+
+  #contact {
+    padding: 1rem 0;
+    .contactLayout {
+      flex-direction: column;
+      iframe {
+        padding: 0 2rem;
+        max-width: 100%;
+      }
+
+      .contactInfo {
+        padding: 0 0.5rem;
+        h2 {
+          font-size: 1rem;
+          text-align: center;
+          padding: 1rem 0;
+          margin-top: 2rem;
+        }
+        .footerInfo {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+  #about {
+    p {
+      font-size: 1.3rem;
+      padding: 0 1rem;
+    }
+  }
+}
